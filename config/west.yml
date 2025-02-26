@@ -12,5 +12,8 @@ manifest:
       remote: zmklio
       revision: main
       import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: Cyboard-DigitalTailor
+      revision: startup_optimization
   self:
     path: config

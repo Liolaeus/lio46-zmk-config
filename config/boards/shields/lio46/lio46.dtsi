@@ -33,6 +33,60 @@
             ;
 
     };
+
+
+    //right hand trackball
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_peripheral_split: trackball_peripheral_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };
+
+    trackball_peripheral_listener: trackball_peripheral_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&trackball_peripheral_split>;
+    };
+
+    //left hand trackball
+    trackball_central_listener: trackball_central_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+    };
+};
+
+&pinctrl {
+    spi0_default: spi0_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 20)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                <NRF_PSEL(SPIM_MISO, 0, 17)>;
+        };
+    };
+    spi0_sleep: spi0_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 20)>,
+                <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                <NRF_PSEL(SPIM_MISO, 0, 17)>;
+            low-power-enable;
+        };
+    };
+};
+
+nice_view_spi: &spi0 {
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi0_default>;
+    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
+};
+
+&pro_micro_i2c {
+    status = "disabled";
 };
 
 &pinctrl {
