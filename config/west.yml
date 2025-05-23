@@ -6,11 +6,16 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: zmklio
       url-base: https://github.com/Liolaeus
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
       remote: zmklio
       revision: main
       import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: badjeff
+      revision: main
   self:
     path: config
