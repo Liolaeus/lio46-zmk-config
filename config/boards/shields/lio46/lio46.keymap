@@ -9,13 +9,13 @@
                         label = "BASE";
                         display-name = "Base";
                         bindings = <
-        &kp ESC    &kp Q  &kp W     &kp E     &kp R      &kp T      &kp F13      &kp Y  &kp U     &kp I      &kp O    &kp P     &kp BSPC  &none
-        &kp TAB    &kp A  &kp S     &kp D     &kp F      &kp G      &kp F14      &kp H  &kp J     &kp K      &kp L    &kp SEMI  &kp SQT   &none
-        &kp LSHFT  &kp Z  &kp X     &kp C     &kp V      &kp B      &kp N  &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
-        &kp LALT   &mo 2  &kp LCTRL  &kp LSHFT  &kp RET  &kp SPACE  &mo 1  &kp RALT  &mo 2     &kp RWIN
+        &kp ESC    &kp Q  &kp W     &kp E  &kp R      &kp T      &kp A         &kp A      &kp Y   &kp U     &kp I    &kp O     &kp P     &kp BSPC
+        &kp TAB    &kp A  &kp S     &kp D  &kp F      &kp G      &kp A         &kp A      &kp H   &kp J     &kp K    &kp L     &kp SEMI  &kp SQT
+        &kp LSHFT  &kp Z  &kp X     &kp C  &kp V      &kp B                               &kp N   &kp M     &kp COMMA &kp DOT  &kp FSLH  &kp RCTRL
+                          &kp LSHFT &kp A  &kp LCTRL  &kp LSHFT  &kp RET       &kp SPACE  &kp A   &kp RALT  &kp A     &kp RWIN
                         >;
-                                // | ESC  |  Q  |  W  |  E  |  R  |                |  Y  |  U  |  I  |  O  |  P  |  <-  |
-                                // | TAB  |  A  |  S  |  D  |  F  |                |  H  |  J  |  K  |  L  |  ;  |  '   |
+                                // | ESC  |  Q  |  W  |  E  |  R  | A            A |  Y  |  U  |  I  |  O  |  P  |  <-  |
+                                // | TAB  |  A  |  S  |  D  |  F  | A            A |  H  |  J  |  K  |  L  |  ;  |  '   |
                                 // | LSHFT|  Z  |  X  |  C  |  V  |                |  N  |  M  |  ,  |  .  |  /  | RCTRL|
                                 //              | LWIN|LCTRL|LSHFT| ENT |    | SPC | MO1 |RALT |RWIN |unlk |
                 };
