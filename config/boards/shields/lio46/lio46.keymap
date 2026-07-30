@@ -12,7 +12,7 @@
         &kp ESC    &kp Q  &kp W     &kp E  &kp R      &kp T      &kp A         &kp A      &kp Y   &kp U     &kp I    &kp O     &kp P     &kp BSPC
         &kp TAB    &kp A  &kp S     &kp D  &kp F      &kp G      &kp A         &kp A      &kp H   &kp J     &kp K    &kp L     &kp SEMI  &kp SQT
         &kp LSHFT  &kp Z  &kp X     &kp C  &kp V      &kp B                               &kp N   &kp M     &kp COMMA &kp DOT  &kp FSLH  &kp RCTRL
-                          &kp LSHFT &kp A  &kp LCTRL  &kp LSHFT  &kp RET       &kp SPACE  &kp A   &kp RALT  &kp A     &kp RWIN
+                          &kp LWIN  &mo 2  &kp LCTRL  &kp LSHFT  &kp RET       &kp SPACE  &mo 1   &kp RALT  &kp LALT  &kp RWIN
                         >;
                                 // | ESC  |  Q  |  W  |  E  |  R  | A            A |  Y  |  U  |  I  |  O  |  P  |  <-  |
                                 // | TAB  |  A  |  S  |  D  |  F  | A            A |  H  |  J  |  K  |  L  |  ;  |  '   |
@@ -24,10 +24,10 @@
                         label = "SYM";
                         display-name = "Symbols";
                         bindings = <
-        &kp TILDE  &kp AMPS  &kp STAR  &kp RA(N3)  &kp CARET  &kp PLUS  &kp F15      &kp KP_EQUAL  &kp HOME  &kp UP          &kp END    &kp AT   &kp BSPC  &none
-        &kp PRCNT  &kp EXCL  &kp HASH  &kp LBKT    &kp RBKT   &kp KP_MINUS  &kp F16    &kp UNDER     &kp LEFT  &kp DOWN        &kp RIGHT  &kp RET  &kp RSHFT &none
-        &kp LSHFT  &kp HASH  &kp DLLR  &kp LBRC    &kp RBRC   &kp PIPE  &kp BSLH      &kp LPAR  &kp RPAR        &kp DEL    &none    &kp RCTRL
-        &kp LALT   &mo 2  &kp LCTRL  &kp LSHFT  &kp RET  &kp SPACE  &mo 1  &kp RALT  &studio_unlock  &kp RWIN
+        &kp TILDE  &kp AMPS  &kp STAR  &kp RA(N3)  &kp CARET  &kp PLUS      &kp F15        &kp KP_EQUAL  &kp HOME  &kp UP    &kp END    &kp AT   &kp BSPC  &none
+        &kp PRCNT  &kp EXCL  &kp HASH  &kp LBKT    &kp RBKT   &kp KP_MINUS  &kp F16        &kp UNDER     &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET  &kp RSHFT &none
+        &kp LSHFT  &kp HASH  &kp DLLR  &kp LBRC    &kp RBRC   &kp PIPE                                   &kp LPAR  &kp RPAR  &kp DEL   &none    &kp RCTRL
+                             &kp LALT  &mo 2       &kp LCTRL  &kp LSHFT     &kp RET        &kp SPACE     &mo 1  &kp RALT     &studio_unlock  &kp RWIN
                         >;
                                 // | `    |  *  |  ê  |  ^  |  +  |                |  =  |HOME | UP  | END |  @  |  <-  |
                                 // | %    |  #  |  [  |  ]  |  -  |                |  _  | <-  | DOW | ->  | RET |      |
@@ -39,10 +39,10 @@
                         label = "NUM";
                         display-name = "Numbers";
                         bindings = <
-        &to 3   &kp F1  &kp F2  &kp F3        &kp F4        &kp F5  &kp F17      &kp F6  &kp F7  &kp F8     &kp F9   &kp F10  &trans  &none
-        &trans  &kp N1  &kp N2  &kp N3        &kp N4        &kp N5  &kp F18      &kp N6  &kp N7  &kp N8     &kp N9   &kp N0   &trans  &none
-        &trans  &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp K_MUTE  &trans  &trans  &kp COMMA  &kp DOT  &none    &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &to 3   &kp F1  &kp F2  &kp F3        &kp F4          &kp F5     &kp F17          &kp F6  &kp F7  &kp F8     &kp F9   &kp F10  &trans  &none
+        &trans  &kp N1  &kp N2  &kp N3        &kp N4          &kp N5     &kp F18          &kp N6  &kp N7  &kp N8     &kp N9   &kp N0   &trans  &none
+        &trans  &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP    &kp K_MUTE                          &trans  &kp COMMA  &kp DOT  &none  &trans
+                        &trans  &trans        &trans          &trans     &trans           &trans  &trans  &trans     &trans  &trans
                         >;
                                 // | to3 | F1  | F2  | F3  | F4  | F5  |                | F6  | F7  | F8  | F9  | F10  |     |
                                 // |     |  1  |  2  |  3  |  4  |  5  |                |  6  |  7  |  8  |  9  |  0   |     |
@@ -53,10 +53,10 @@
                         label = "SETTINGS";
                         display-name = "Settings";
                         bindings = <
-        &to 0  &none  &none  &none  &none  &none  &none      &none  &none         &none         &none         &none  &bt BT_CLR  &none
-        &none  &none  &none  &none  &none  &none  &none      &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none       &none
-        &none  &none  &none  &none  &none  &none  &none      &none  &none         &none         &none         &none  &none       &none
-        &none  &none  &none  &none  &none  &none  &none  &none  &none         &none
+        &to 0  &none  &none  &none  &none  &none  &none         &none  &none         &none         &none         &none  &bt BT_CLR  &none
+        &none  &none  &none  &none  &none  &none  &none         &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none  &none       &none
+        &none  &none  &none  &none  &none  &none  &none                &none         &none         &none  &none  &none
+                      &none  &none  &none  &none  &none         &none  &none         &none         &none  &none
                         >;
                                 // | to0 |     |     |     |     |                |     |     |     |     |     | clr |
                                 // |     |     |     |     |     |                |     | bt1 | bt2 | bt3 |     |     |
