@@ -2,7 +2,7 @@ id: lio46
 name: Lio46
 type: shield
 url: https://github.com/Liolaeus/lio46
-requires: [nice_nano]
+requires: [nice_nano@2.0.0//zmk]
 features:
   - keys
   - studio
