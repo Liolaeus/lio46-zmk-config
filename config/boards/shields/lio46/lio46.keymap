@@ -24,10 +24,10 @@
                         label = "SYM";
                         display-name = "Symbols";
                         bindings = <
-        &kp TILDE  &kp AMPS  &kp STAR  &kp RA(N3)  &kp CARET  &kp PLUS      &kp F15        &kp KP_EQUAL  &kp HOME  &kp UP    &kp END    &kp AT   &kp BSPC  &none
-        &kp PRCNT  &kp EXCL  &kp HASH  &kp LBKT    &kp RBKT   &kp KP_MINUS  &kp F16        &kp UNDER     &kp LEFT  &kp DOWN  &kp RIGHT  &kp RET  &kp RSHFT &none
-        &kp LSHFT  &kp HASH  &kp DLLR  &kp LBRC    &kp RBRC   &kp PIPE                                   &kp LPAR  &kp RPAR  &kp DEL   &none    &kp RCTRL
-                             &kp LALT  &mo 2       &kp LCTRL  &kp LSHFT     &kp RET        &kp SPACE     &mo 1  &kp RALT     &studio_unlock  &kp RWIN
+        &kp TILDE  &kp AMPS  &kp STAR  &kp RA(N3)  &kp CARET  &kp PLUS      &kp F15        &kp F15    &kp KP_EQUAL  &kp HOME  &kp UP          &kp END    &kp AT   &kp BSPC
+        &kp PRCNT  &kp EXCL  &kp HASH  &kp LBKT    &kp RBKT   &kp KP_MINUS  &kp F16        &kp F16    &kp UNDER     &kp LEFT  &kp DOWN        &kp RIGHT  &kp RET  &kp RSHFT
+        &kp LSHFT  &kp HASH  &kp DLLR  &kp LBRC    &kp RBRC   &kp PIPE                                &kp LPAR      &kp RPAR  &kp DEL         &none    &kp RCTRL
+                             &kp LALT  &mo 2       &kp LCTRL  &kp LSHFT     &kp RET        &kp SPACE  &mo 1         &kp RALT  &studio_unlock  &kp RWIN
                         >;
                                 // | `    |  *  |  ê  |  ^  |  +  |                |  =  |HOME | UP  | END |  @  |  <-  |
                                 // | %    |  #  |  [  |  ]  |  -  |                |  _  | <-  | DOW | ->  | RET |      |
